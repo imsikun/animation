@@ -1,0 +1,56 @@
+/* google fonts */
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+
+/* universal styling starts here */
+*,
+*::before,
+*::after {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+
+body {
+ font-family: 'Poppins', sans-serif;
+}
+
+.portfolio {
+ color: #fff;
+ background: radial-gradient(rgba(43, 55, 96, 1), rgba(11, 16, 35, 1));
+}
+
+/* universal styling ends here */
+
+/* nav */
+nav {
+ max-height: 10vh;
+ width: 90%;
+ margin: auto;
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ padding: 25px 0px;
+}
+
+.logo {
+ font-size: 20px;
+}
+
+.page {
+ min-height: 90vh;
+ display: grid;
+ grid-template-columns: 5% 1fr 1fr 1fr 5%;
+}
+
+.hero {
+ overflow: hidden;
+ height: 500px;
+ align-self: center;
+ justify-self: center;
+ display: flex;
+}
+
+.details {
+ grid-column: 2/3;
+ align-self: end;
+}
