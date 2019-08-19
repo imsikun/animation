@@ -50,7 +50,38 @@ nav {
  display: flex;
 }
 
+.hero img {
+ height: 500px;
+ transition: transform 0.3s ease-in-out;
+ cursor: pointer;
+}
+
+.model-right {
+ transform: translate(0%, 10%);
+}
+
+.model-left {
+ transform: translate(0%, -10%);
+}
+
+.hero:hover .model-right {
+ transform: translate(0%, 0%);
+}
+
+.hero:hover .model-left {
+ transform: translate(0%, 0%);
+}
+
 .details {
  grid-column: 2/3;
  align-self: end;
+}
+
+.details h1 {
+ font-size: 54px;
+}
+
+.details h2 {
+ font-size: 35px;
+ padding: 20px 0px;
 }
